@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Movie Schedule Section */
+.movie__schedule {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.movie__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.movie__poster {
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.movie__info {
+  text-align: center;
+}
+
+.schedule {
+  width: 65%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.template__schedule {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.schedule-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Seat Arrangement Section */
+.seat__arrangement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.screen {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.normal__seats {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left__seats,
+.middle__seats,
+.right__seats,
+.vip__seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.status__description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.available,
+.selected,
+.reserved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.available__seat,
+.selected__seat,
+.reserved__seat {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Checkout Modal */
+.final__page {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.checkout__content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.checkout__content__button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.exit__content__button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .movie__schedule {
+    flex-direction: column;
+  }
+
+  .movie__details {
+    width: 100%;
+  }
+
+  .schedule {
+    width: 100%;
+  }
+
+  .checkout__content {
+    width: 80%;
+  }
+}
+/* MAIN CONTENT STYLES */
+/* ... (previous styles) ... */
+
+#svg.seat.available__seat {
+  fill: #4caf50; /* Green color for available seats */
+}
+
+.seat.selected__seat {
+  fill: #ff9800; /* Orange color for selected seats */
+}
+
+.seart.reserved__seat {
+  fill: #f44336; /* Red color for reserved seats */
+}
+
+/* ... (remaining styles) ... */
